@@ -1,0 +1,450 @@
+2021-10-09 13:48:43.7621 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:48:43.7799 Debug Found assembly location directory: 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-10-09 13:48:43.7799 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:48:43.7799 Debug Search for auto loading files in location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:48:43.7799 Debug Start auto loading, location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:48:43.7799 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-09 13:48:43.7799 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-09 13:48:43.7922 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-10-09 13:48:43.7922 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:48:43.7922 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-10-09 13:48:43.7922 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-09 13:48:43.7922 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-09 13:48:43.7922 Info NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null. File version: 1.0.4.0. Product version: 1.0.4. GlobalAssemblyCache: False
+2021-10-09 13:48:43.7922 Debug ScanAssembly('NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null')
+2021-10-09 13:48:43.7922 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll succeeded!
+2021-10-09 13:48:43.7922 Debug Auto loading done
+2021-10-09 13:48:43.7922 Info Message Template Auto Format enabled
+2021-10-09 13:48:43.8325 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.Targets.FileTarget.name' to 'SocketNetCoreServices'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/Service/${shortdate}/${event-context:item=terminalPhoneNo}.log'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.LayoutRenderers.EventContextLayoutRenderer.item' to 'terminalPhoneNo'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.Targets.FileTarget.layout' to '${event-properties:item=mac}|${event-properties:item=msgtype}: ${date:format=ddHHmmss} :${message} ${event-properties:item=msgtext} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'mac'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtype'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtext'
+2021-10-09 13:48:43.8394 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:48:43.8591 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-09 13:48:43.8591 Info Adding target FileTarget(Name=SocketNetCoreServices)
+2021-10-09 13:48:43.8591 Debug Registered target SocketNetCoreServices: NLog.Targets.FileTarget
+2021-10-09 13:48:43.8591 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '${date:format=ddHHmmss} ${callsite} ${level} ${message} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Debug'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'DarkGray'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Info'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Gray'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Warn'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Yellow'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Error'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Fatal'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-09 13:48:43.8692 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.backgroundColor' to 'White'
+2021-10-09 13:48:43.8692 Info Adding target ColoredConsoleTarget(Name=console)
+2021-10-09 13:48:43.8692 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-10-09 13:48:43.8987 Debug Watching path 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config' for changes.
+2021-10-09 13:48:43.8999 Debug --- NLog configuration dump ---
+2021-10-09 13:48:43.8999 Debug Targets:
+2021-10-09 13:48:43.8999 Debug File Target[SocketNetCoreServices]
+2021-10-09 13:48:43.8999 Debug ColoredConsole Target[console]
+2021-10-09 13:48:43.8999 Debug Rules:
+2021-10-09 13:48:43.8999 Debug logNamePattern: (NLog.ThinkhomeSocketLoggerNetCore.Extensions.:StartsWith) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SocketNetCoreServices console ]
+2021-10-09 13:48:43.8999 Debug --- End of NLog configuration dump ---
+2021-10-09 13:48:43.8999 Info Validating config: TargetNames=SocketNetCoreServices, console, ConfigItems=61, FilePath=D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs/nlog.config
+2021-10-09 13:48:43.8999 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-10-09 13:48:43.9171 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-10-09 13:48:43.9640 Debug Hide assemblies for callsite
+2021-10-09 13:48:43.9640 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:48:43.9857 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-10-09 13:48:43.9932 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-10-09 13:48:44.0094 Debug Targets for NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging.NLogThinkhomeCoordinatorLogger by level:
+2021-10-09 13:48:44.0094 Debug Trace =>
+2021-10-09 13:48:44.0094 Debug Debug => SocketNetCoreServices console
+2021-10-09 13:48:44.0094 Debug Info => SocketNetCoreServices console
+2021-10-09 13:48:44.0094 Debug Warn => SocketNetCoreServices console
+2021-10-09 13:48:44.0094 Debug Error => SocketNetCoreServices console
+2021-10-09 13:48:44.0094 Debug Fatal => SocketNetCoreServices console
+2021-10-09 13:48:44.2759 Debug FileTarget(Name=SocketNetCoreServices): Preparing for new file 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\wwwroot\logs\Service\2021-10-09\180085300102.log'
+2021-10-09 13:48:44.2759 Debug Creating file appender: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\wwwroot\logs\Service\2021-10-09\180085300102.log
+2021-10-09 13:48:44.3536 Info AppDomain Shutting down. Logger closing...
+2021-10-09 13:48:44.3536 Debug Stopping file watching for path 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config'
+2021-10-09 13:48:44.3536 Debug Flush completed
+2021-10-09 13:48:44.3536 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-10-09 13:48:44.3536 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-10-09 13:48:44.3536 Debug Targets not configured for logger: NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging.NLogThinkhomeCoordinatorLogger
+2021-10-09 13:48:44.3683 Debug Closing logging configuration...
+2021-10-09 13:48:44.3683 Debug Closing target 'File Target[SocketNetCoreServices]'.
+2021-10-09 13:48:44.3683 Debug FileAppender Closing Invalidate - D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\wwwroot\logs\Service\2021-10-09\180085300102.log
+2021-10-09 13:48:44.3683 Debug Closed target 'File Target[SocketNetCoreServices]'.
+2021-10-09 13:48:44.3683 Debug Closing target 'ColoredConsole Target[console]'.
+2021-10-09 13:48:44.3683 Debug Closed target 'ColoredConsole Target[console]'.
+2021-10-09 13:48:44.3683 Debug Finished closing logging configuration.
+2021-10-09 13:48:44.3683 Info Logger has been shut down.
+2021-10-09 13:51:25.7642 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:51:25.7788 Debug Found assembly location directory: 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-10-09 13:51:25.7788 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:51:25.7788 Debug Search for auto loading files in location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:51:25.7788 Debug Start auto loading, location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:51:25.7788 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-09 13:51:25.7788 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-09 13:51:25.7903 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-10-09 13:51:25.7903 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:51:25.7903 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-10-09 13:51:25.7903 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-09 13:51:25.7903 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-09 13:51:25.7903 Info NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null. File version: 1.0.4.0. Product version: 1.0.4. GlobalAssemblyCache: False
+2021-10-09 13:51:25.7903 Debug ScanAssembly('NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null')
+2021-10-09 13:51:25.7903 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll succeeded!
+2021-10-09 13:51:25.7903 Debug Auto loading done
+2021-10-09 13:51:25.7903 Info Message Template Auto Format enabled
+2021-10-09 13:51:25.8280 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-09 13:51:25.8280 Debug Setting 'NLog.Targets.FileTarget.name' to 'SocketNetCoreServices'
+2021-10-09 13:51:25.8280 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/Service/${shortdate}/${event-context:item=terminalPhoneNo}.log'
+2021-10-09 13:51:25.8373 Debug Setting 'NLog.LayoutRenderers.EventContextLayoutRenderer.item' to 'terminalPhoneNo'
+2021-10-09 13:51:25.8373 Debug Setting 'NLog.Targets.FileTarget.layout' to '${event-properties:item=mac}|${event-properties:item=msgtype}: ${date:format=ddHHmmss} :${message} ${event-properties:item=msgtext} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:51:25.8373 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'mac'
+2021-10-09 13:51:25.8373 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtype'
+2021-10-09 13:51:25.8373 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-09 13:51:25.8373 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtext'
+2021-10-09 13:51:25.8373 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:51:25.8569 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-09 13:51:25.8569 Info Adding target FileTarget(Name=SocketNetCoreServices)
+2021-10-09 13:51:25.8569 Debug Registered target SocketNetCoreServices: NLog.Targets.FileTarget
+2021-10-09 13:51:25.8569 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-09 13:51:25.8569 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '${date:format=ddHHmmss} ${callsite} ${level} ${message} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Debug'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'DarkGray'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Info'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Gray'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Warn'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Yellow'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Error'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Fatal'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-09 13:51:25.8681 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.backgroundColor' to 'White'
+2021-10-09 13:51:25.8681 Info Adding target ColoredConsoleTarget(Name=console)
+2021-10-09 13:51:25.8829 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-10-09 13:51:25.9000 Debug Watching path 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config' for changes.
+2021-10-09 13:51:25.9000 Debug --- NLog configuration dump ---
+2021-10-09 13:51:25.9000 Debug Targets:
+2021-10-09 13:51:25.9000 Debug File Target[SocketNetCoreServices]
+2021-10-09 13:51:25.9000 Debug ColoredConsole Target[console]
+2021-10-09 13:51:25.9000 Debug Rules:
+2021-10-09 13:51:25.9000 Debug logNamePattern: (NLog.ThinkhomeSocketLoggerNetCore.Extensions.:StartsWith) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SocketNetCoreServices console ]
+2021-10-09 13:51:25.9000 Debug --- End of NLog configuration dump ---
+2021-10-09 13:51:25.9000 Info Validating config: TargetNames=SocketNetCoreServices, console, ConfigItems=61, FilePath=D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs/nlog.config
+2021-10-09 13:51:25.9169 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-10-09 13:51:25.9169 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-10-09 13:51:25.9753 Debug Hide assemblies for callsite
+2021-10-09 13:51:25.9753 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:51:25.9991 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-10-09 13:51:26.0080 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-10-09 13:51:26.0317 Debug Targets for NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging.NLogThinkhomeCoordinatorLogger by level:
+2021-10-09 13:51:26.0317 Debug Trace =>
+2021-10-09 13:51:26.0317 Debug Debug => SocketNetCoreServices console
+2021-10-09 13:51:26.0317 Debug Info => SocketNetCoreServices console
+2021-10-09 13:51:26.0317 Debug Warn => SocketNetCoreServices console
+2021-10-09 13:51:26.0317 Debug Error => SocketNetCoreServices console
+2021-10-09 13:51:26.0317 Debug Fatal => SocketNetCoreServices console
+2021-10-09 13:52:43.3989 Debug FileTarget(Name=SocketNetCoreServices): Preparing for new file 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\wwwroot\logs\Service\2021-10-09\180085300102.log'
+2021-10-09 13:52:43.3989 Debug Creating file appender: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\wwwroot\logs\Service\2021-10-09\180085300102.log
+2021-10-09 13:52:43.5508 Info AppDomain Shutting down. Logger closing...
+2021-10-09 13:52:43.5508 Debug Stopping file watching for path 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config'
+2021-10-09 13:52:43.5681 Debug Flush completed
+2021-10-09 13:52:43.5681 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-10-09 13:52:43.5681 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-10-09 13:52:43.5681 Debug Targets not configured for logger: NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging.NLogThinkhomeCoordinatorLogger
+2021-10-09 13:52:43.5713 Debug Closing logging configuration...
+2021-10-09 13:52:43.5713 Debug Closing target 'File Target[SocketNetCoreServices]'.
+2021-10-09 13:52:43.5713 Debug FileAppender Closing Invalidate - D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\wwwroot\logs\Service\2021-10-09\180085300102.log
+2021-10-09 13:52:43.5713 Debug Closed target 'File Target[SocketNetCoreServices]'.
+2021-10-09 13:52:43.5713 Debug Closing target 'ColoredConsole Target[console]'.
+2021-10-09 13:52:43.5713 Debug Closed target 'ColoredConsole Target[console]'.
+2021-10-09 13:52:43.5713 Debug Finished closing logging configuration.
+2021-10-09 13:52:43.5713 Info Logger has been shut down.
+2021-10-09 13:52:56.3584 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:52:56.3701 Debug Found assembly location directory: 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-10-09 13:52:56.3701 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:52:56.3701 Debug Search for auto loading files in location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:52:56.3701 Debug Start auto loading, location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-09 13:52:56.3701 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-09 13:52:56.3701 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-09 13:52:56.3701 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-10-09 13:52:56.3832 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:52:56.3832 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-10-09 13:52:56.3832 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-09 13:52:56.3832 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-09 13:52:56.3832 Info NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null. File version: 1.0.4.0. Product version: 1.0.4. GlobalAssemblyCache: False
+2021-10-09 13:52:56.3832 Debug ScanAssembly('NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null')
+2021-10-09 13:52:56.3832 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll succeeded!
+2021-10-09 13:52:56.3832 Debug Auto loading done
+2021-10-09 13:52:56.3832 Info Message Template Auto Format enabled
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.Targets.FileTarget.name' to 'SocketNetCoreServices'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/Service/${shortdate}/${event-context:item=terminalPhoneNo}.log'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.LayoutRenderers.EventContextLayoutRenderer.item' to 'terminalPhoneNo'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.Targets.FileTarget.layout' to '${event-properties:item=mac}|${event-properties:item=msgtype}: ${date:format=ddHHmmss} :${message} ${event-properties:item=msgtext} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'mac'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtype'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtext'
+2021-10-09 13:52:56.4154 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:52:56.4424 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-09 13:52:56.4424 Info Adding target FileTarget(Name=SocketNetCoreServices)
+2021-10-09 13:52:56.4454 Debug Registered target SocketNetCoreServices: NLog.Targets.FileTarget
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '${date:format=ddHHmmss} ${callsite} ${level} ${message} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Debug'
+2021-10-09 13:52:56.4454 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'DarkGray'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Info'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Gray'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Warn'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Yellow'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Error'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Fatal'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-09 13:52:56.4619 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.backgroundColor' to 'White'
+2021-10-09 13:52:56.4619 Info Adding target ColoredConsoleTarget(Name=console)
+2021-10-09 13:52:56.4619 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-10-09 13:52:56.4892 Debug Watching path 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config' for changes.
+2021-10-09 13:52:56.4892 Debug --- NLog configuration dump ---
+2021-10-09 13:52:56.4892 Debug Targets:
+2021-10-09 13:52:56.4924 Debug File Target[SocketNetCoreServices]
+2021-10-09 13:52:56.4924 Debug ColoredConsole Target[console]
+2021-10-09 13:52:56.4924 Debug Rules:
+2021-10-09 13:52:56.4924 Debug logNamePattern: (NLog.ThinkhomeSocketLoggerNetCore.Extensions.:StartsWith) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SocketNetCoreServices console ]
+2021-10-09 13:52:56.4924 Debug --- End of NLog configuration dump ---
+2021-10-09 13:52:56.4924 Info Validating config: TargetNames=SocketNetCoreServices, console, ConfigItems=61, FilePath=D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs/nlog.config
+2021-10-09 13:52:56.4924 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-10-09 13:52:56.5085 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-10-09 13:52:56.5571 Debug Hide assemblies for callsite
+2021-10-09 13:52:56.5571 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-09 13:52:56.5805 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-10-09 13:52:56.5899 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-10-09 13:52:56.6056 Debug Targets for NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging.NLogThinkhomeCoordinatorLogger by level:
+2021-10-09 13:52:56.6056 Debug Trace =>
+2021-10-09 13:52:56.6056 Debug Debug => SocketNetCoreServices console
+2021-10-09 13:52:56.6056 Debug Info => SocketNetCoreServices console
+2021-10-09 13:52:56.6056 Debug Warn => SocketNetCoreServices console
+2021-10-09 13:52:56.6056 Debug Error => SocketNetCoreServices console
+2021-10-09 13:52:56.6056 Debug Fatal => SocketNetCoreServices console
+2021-10-21 09:26:36.8199 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-21 09:26:36.8199 Debug Found assembly location directory: 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-10-21 09:26:36.8199 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-21 09:26:36.8314 Debug Search for auto loading files in location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-21 09:26:36.8314 Debug Start auto loading, location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-21 09:26:36.8314 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-21 09:26:36.8314 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-21 09:26:36.8314 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-10-21 09:26:36.8314 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-21 09:26:36.8314 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-10-21 09:26:36.8314 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-21 09:26:36.8314 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-21 09:26:36.8314 Info NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null. File version: 1.0.4.0. Product version: 1.0.4. GlobalAssemblyCache: False
+2021-10-21 09:26:36.8314 Debug ScanAssembly('NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null')
+2021-10-21 09:26:36.8314 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll succeeded!
+2021-10-21 09:26:36.8314 Debug Auto loading done
+2021-10-21 09:26:36.8314 Info Message Template Auto Format enabled
+2021-10-21 09:26:36.8530 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.Targets.FileTarget.name' to 'SocketNetCoreServices'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/Service/${shortdate}/${event-context:item=terminalPhoneNo}.log'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.LayoutRenderers.EventContextLayoutRenderer.item' to 'terminalPhoneNo'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.Targets.FileTarget.layout' to '${event-properties:item=mac}|${event-properties:item=msgtype}: ${date:format=ddHHmmss} :${message} ${event-properties:item=msgtext} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'mac'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtype'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtext'
+2021-10-21 09:26:36.8661 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-21 09:26:36.8794 Info Adding target FileTarget(Name=SocketNetCoreServices)
+2021-10-21 09:26:36.8794 Debug Registered target SocketNetCoreServices: NLog.Targets.FileTarget
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '${date:format=ddHHmmss} ${callsite} ${level} ${message} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Debug'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'DarkGray'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Info'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Gray'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Warn'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Yellow'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Error'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Fatal'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-21 09:26:36.8794 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.backgroundColor' to 'White'
+2021-10-21 09:26:36.8944 Info Adding target ColoredConsoleTarget(Name=console)
+2021-10-21 09:26:36.8944 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-10-21 09:26:36.8944 Debug Watching path 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config' for changes.
+2021-10-21 09:26:36.8944 Debug --- NLog configuration dump ---
+2021-10-21 09:26:36.8944 Debug Targets:
+2021-10-21 09:26:36.8944 Debug File Target[SocketNetCoreServices]
+2021-10-21 09:26:36.8944 Debug ColoredConsole Target[console]
+2021-10-21 09:26:36.8944 Debug Rules:
+2021-10-21 09:26:36.8944 Debug logNamePattern: (NLog.ThinkhomeSocketLoggerNetCore.Extensions.:StartsWith) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SocketNetCoreServices console ]
+2021-10-21 09:26:36.9103 Debug --- End of NLog configuration dump ---
+2021-10-21 09:26:36.9103 Info Validating config: TargetNames=SocketNetCoreServices, console, ConfigItems=61, FilePath=D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs/nlog.config
+2021-10-21 09:26:36.9103 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-10-21 09:26:36.9103 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-10-21 09:26:36.9496 Debug Hide assemblies for callsite
+2021-10-21 09:26:36.9496 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-21 09:26:36.9637 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-10-21 09:26:36.9637 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-10-21 09:43:36.2291 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-21 09:43:36.2291 Debug Found assembly location directory: 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-10-21 09:43:36.2291 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-21 09:43:36.2384 Debug Search for auto loading files in location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-21 09:43:36.2384 Debug Start auto loading, location: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-10-21 09:43:36.2384 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-21 09:43:36.2384 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-10-21 09:43:36.2384 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-10-21 09:43:36.2384 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-21 09:43:36.2384 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-10-21 09:43:36.2384 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-21 09:43:36.2384 Info Loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-10-21 09:43:36.2384 Info NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null. File version: 1.0.4.0. Product version: 1.0.4. GlobalAssemblyCache: False
+2021-10-21 09:43:36.2384 Debug ScanAssembly('NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.4.0, Culture=neutral, PublicKeyToken=null')
+2021-10-21 09:43:36.2384 Info Auto loading assembly file: D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll succeeded!
+2021-10-21 09:43:36.2384 Debug Auto loading done
+2021-10-21 09:43:36.2384 Info Message Template Auto Format enabled
+2021-10-21 09:43:36.2588 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.Targets.FileTarget.name' to 'SocketNetCoreServices'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/Service/${shortdate}/${event-context:item=terminalPhoneNo}.log'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.LayoutRenderers.EventContextLayoutRenderer.item' to 'terminalPhoneNo'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.Targets.FileTarget.layout' to '${event-properties:item=mac}|${event-properties:item=msgtype}: ${date:format=ddHHmmss} :${message} ${event-properties:item=msgtext} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'mac'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtype'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtext'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:43:36.2706 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-21 09:43:36.2845 Info Adding target FileTarget(Name=SocketNetCoreServices)
+2021-10-21 09:43:36.2845 Debug Registered target SocketNetCoreServices: NLog.Targets.FileTarget
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '${date:format=ddHHmmss} ${callsite} ${level} ${message} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Debug'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'DarkGray'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Info'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Gray'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Warn'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Yellow'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Error'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Fatal'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-10-21 09:43:36.2845 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.backgroundColor' to 'White'
+2021-10-21 09:43:36.2845 Info Adding target ColoredConsoleTarget(Name=console)
+2021-10-21 09:43:36.2845 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-10-21 09:43:36.3090 Debug Watching path 'D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config' for changes.
+2021-10-21 09:43:36.3090 Debug --- NLog configuration dump ---
+2021-10-21 09:43:36.3090 Debug Targets:
+2021-10-21 09:43:36.3090 Debug File Target[SocketNetCoreServices]
+2021-10-21 09:43:36.3090 Debug ColoredConsole Target[console]
+2021-10-21 09:43:36.3090 Debug Rules:
+2021-10-21 09:43:36.3090 Debug logNamePattern: (NLog.ThinkhomeSocketLoggerNetCore.Extensions.:StartsWith) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SocketNetCoreServices console ]
+2021-10-21 09:43:36.3090 Debug --- End of NLog configuration dump ---
+2021-10-21 09:43:36.3170 Info Validating config: TargetNames=SocketNetCoreServices, console, ConfigItems=61, FilePath=D:\workspace\thinkhome\ThinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs/nlog.config
+2021-10-21 09:43:36.3170 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-10-21 09:43:36.3170 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-10-21 09:43:36.3506 Debug Hide assemblies for callsite
+2021-10-21 09:43:36.3506 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-10-21 09:43:36.3645 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-10-21 09:43:36.3645 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-11-05 10:36:24.1850 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-05 10:36:24.1966 Debug Found assembly location directory: 'D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-11-05 10:36:24.1966 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-11-05 10:36:24.1966 Debug Search for auto loading files in location: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-11-05 10:36:24.1966 Debug Start auto loading, location: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0
+2021-11-05 10:36:24.1966 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-11-05 10:36:24.1966 Info Loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-11-05 10:36:24.2046 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-11-05 10:36:24.2046 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-05 10:36:24.2046 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-11-05 10:36:24.2046 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-11-05 10:36:24.2046 Info Loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll
+2021-11-05 10:36:24.2046 Info NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.5.0, Culture=neutral, PublicKeyToken=null. File version: 1.0.5.0. Product version: 1.0.5. GlobalAssemblyCache: False
+2021-11-05 10:36:24.2046 Debug ScanAssembly('NLog.ThinkhomeSocketLoggerNetCore, Version=1.0.5.0, Culture=neutral, PublicKeyToken=null')
+2021-11-05 10:36:24.2046 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\NLog.ThinkhomeSocketLoggerNetCore.dll succeeded!
+2021-11-05 10:36:24.2046 Debug Auto loading done
+2021-11-05 10:36:24.2046 Info Message Template Auto Format enabled
+2021-11-05 10:36:24.2215 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.Targets.FileTarget.name' to 'SocketNetCoreServices'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/Service/${shortdate}/${event-context:item=terminalPhoneNo}.log'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.LayoutRenderers.EventContextLayoutRenderer.item' to 'terminalPhoneNo'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.Targets.FileTarget.layout' to '${event-properties:item=mac}|${event-properties:item=msgtype}: ${date:format=ddHHmmss} :${message} ${event-properties:item=msgtext} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'mac'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtype'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'msgtext'
+2021-11-05 10:36:24.2373 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-11-05 10:36:24.2501 Info Adding target FileTarget(Name=SocketNetCoreServices)
+2021-11-05 10:36:24.2501 Debug Registered target SocketNetCoreServices: NLog.Targets.FileTarget
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '${date:format=ddHHmmss} ${callsite} ${level} ${message} ${onexception:${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.LayoutRenderers.DateLayoutRenderer.format' to 'ddHHmmss'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.LayoutRenderers.Wrappers.OnExceptionLayoutRendererWrapper.Inner' to '${exception:format=tostring} ${newline} ${stacktrace} ${newline}'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.LayoutRenderers.ExceptionLayoutRenderer.format' to 'tostring'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Debug'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'DarkGray'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Info'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Gray'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Warn'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Yellow'
+2021-11-05 10:36:24.2501 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Error'
+2021-11-05 10:36:24.2642 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-11-05 10:36:24.2642 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.condition' to 'level == LogLevel.Fatal'
+2021-11-05 10:36:24.2642 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.foregroundColor' to 'Red'
+2021-11-05 10:36:24.2642 Debug Setting 'NLog.Targets.ConsoleRowHighlightingRule.backgroundColor' to 'White'
+2021-11-05 10:36:24.2642 Info Adding target ColoredConsoleTarget(Name=console)
+2021-11-05 10:36:24.2642 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-11-05 10:36:24.2642 Debug Watching path 'D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs' filter 'nlog.config' for changes.
+2021-11-05 10:36:24.2642 Debug --- NLog configuration dump ---
+2021-11-05 10:36:24.2642 Debug Targets:
+2021-11-05 10:36:24.2642 Debug File Target[SocketNetCoreServices]
+2021-11-05 10:36:24.2642 Debug ColoredConsole Target[console]
+2021-11-05 10:36:24.2642 Debug Rules:
+2021-11-05 10:36:24.2642 Debug logNamePattern: (NLog.ThinkhomeSocketLoggerNetCore.Extensions.:StartsWith) levels: [ Debug Info Warn Error Fatal ] appendTo: [ SocketNetCoreServices console ]
+2021-11-05 10:36:24.2792 Debug --- End of NLog configuration dump ---
+2021-11-05 10:36:24.2792 Info Validating config: TargetNames=SocketNetCoreServices, console, ConfigItems=61, FilePath=D:\workspace\thinkhome\thinkhomeSocketLogger\tests\GPSSocketLoggerNetCore.tests\bin\Debug\net5.0\configs/nlog.config
+2021-11-05 10:36:24.2792 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-11-05 10:36:24.2792 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-11-05 10:36:24.3156 Debug Hide assemblies for callsite
+2021-11-05 10:36:24.3156 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-05 10:36:24.3285 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-11-05 10:36:24.3285 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-11-05 10:36:24.3434 Debug Targets for NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging.NLogThinkhomeCoordinatorLogger by level:
+2021-11-05 10:36:24.3434 Debug Trace =>
+2021-11-05 10:36:24.3434 Debug Debug => SocketNetCoreServices console
+2021-11-05 10:36:24.3434 Debug Info => SocketNetCoreServices console
+2021-11-05 10:36:24.3434 Debug Warn => SocketNetCoreServices console
+2021-11-05 10:36:24.3434 Debug Error => SocketNetCoreServices console
+2021-11-05 10:36:24.3434 Debug Fatal => SocketNetCoreServices console

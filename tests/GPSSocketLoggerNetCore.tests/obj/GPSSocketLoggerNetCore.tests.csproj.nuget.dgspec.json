@@ -1,0 +1,243 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\tests\\GPSSocketLoggerNetCore.tests\\GPSSocketLoggerNetCore.tests.csproj": {}
+  },
+  "projects": {
+    "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\GPSSocketLoggerNetCore\\ThinkhomeSocketLoggerNetCore.csproj": {
+      "version": "1.0.3",
+      "restore": {
+        "projectUniqueName": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\GPSSocketLoggerNetCore\\ThinkhomeSocketLoggerNetCore.csproj",
+        "projectName": "ThinkhomeSocketLoggerNetCore",
+        "projectPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\GPSSocketLoggerNetCore\\ThinkhomeSocketLoggerNetCore.csproj",
+        "packagesPath": "C:\\Users\\33766\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\GPSSocketLoggerNetCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\33766\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://101.200.39.154:9010/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\NLog.GPSSocketLoggerNetCore\\NLog.ThinkhomeSocketLoggerNetCore.csproj": {
+      "version": "1.0.5",
+      "restore": {
+        "projectUniqueName": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\NLog.GPSSocketLoggerNetCore\\NLog.ThinkhomeSocketLoggerNetCore.csproj",
+        "projectName": "NLog.ThinkhomeSocketLoggerNetCore",
+        "projectPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\NLog.GPSSocketLoggerNetCore\\NLog.ThinkhomeSocketLoggerNetCore.csproj",
+        "packagesPath": "C:\\Users\\33766\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\NLog.GPSSocketLoggerNetCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\33766\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://101.200.39.154:9010/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\GPSSocketLoggerNetCore\\ThinkhomeSocketLoggerNetCore.csproj": {
+                "projectPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\GPSSocketLoggerNetCore\\ThinkhomeSocketLoggerNetCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\tests\\GPSSocketLoggerNetCore.tests\\GPSSocketLoggerNetCore.tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\tests\\GPSSocketLoggerNetCore.tests\\GPSSocketLoggerNetCore.tests.csproj",
+        "projectName": "GPSSocketLoggerNetCore.tests",
+        "projectPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\tests\\GPSSocketLoggerNetCore.tests\\GPSSocketLoggerNetCore.tests.csproj",
+        "packagesPath": "C:\\Users\\33766\\.nuget\\packages\\",
+        "outputPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\tests\\GPSSocketLoggerNetCore.tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\33766\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://101.200.39.154:9010/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\NLog.GPSSocketLoggerNetCore\\NLog.ThinkhomeSocketLoggerNetCore.csproj": {
+                "projectPath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\NLog.GPSSocketLoggerNetCore\\NLog.ThinkhomeSocketLoggerNetCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.7.4, )"
+            },
+            "ThinkHomeDevice.Protocol": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "ThinkHome_CommandTranslator": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

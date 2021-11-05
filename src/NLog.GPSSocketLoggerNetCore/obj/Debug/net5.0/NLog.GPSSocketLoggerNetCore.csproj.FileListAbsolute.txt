@@ -1,0 +1,15 @@
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\bin\Debug\net5.0\NLog.GPSSocketLoggerNetCore.deps.json
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\bin\Debug\net5.0\NLog.GPSSocketLoggerNetCore.dll
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\bin\Debug\net5.0\ref\NLog.GPSSocketLoggerNetCore.dll
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\bin\Debug\net5.0\NLog.GPSSocketLoggerNetCore.pdb
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\bin\Debug\net5.0\ThinkhomeSocketLoggerNetCore.dll
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\bin\Debug\net5.0\ThinkhomeSocketLoggerNetCore.pdb
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.csproj.AssemblyReference.cache
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.AssemblyInfoInputs.cache
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.AssemblyInfo.cs
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.csproj.CoreCompileInputs.cache
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.csproj.CopyComplete
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.dll
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\ref\NLog.GPSSocketLoggerNetCore.dll
+C:\WorkDir\Year Working 2021\ThinkHome\codes\thinkhomeservice_core\ThinkhomeSocketLogger\NLog.GPSSocketLoggerNetCore\obj\Debug\net5.0\NLog.GPSSocketLoggerNetCore.pdb

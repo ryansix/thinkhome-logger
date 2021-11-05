@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EA019B49-C2A8-47A6-9C67-87E3216B0175}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkhomeSocketLoggerNetCore", "src\GPSSocketLoggerNetCore\ThinkhomeSocketLoggerNetCore.csproj", "{99E80877-4C64-46F4-B6BB-E7B9E7BFBCDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.ThinkhomeSocketLoggerNetCore", "src\NLog.GPSSocketLoggerNetCore\NLog.ThinkhomeSocketLoggerNetCore.csproj", "{B66A4843-6C21-4D57-B0FD-E753613C119E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPSSocketLoggerNetCore.tests", "tests\GPSSocketLoggerNetCore.tests\GPSSocketLoggerNetCore.tests.csproj", "{E33F1EF9-0618-4071-A918-4F6FA22077BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkhomeLogger.NLog", "src\thinkhomeLogger.NLog\ThinkhomeLogger.NLog.csproj", "{146E74E2-4F87-4796-8F2A-BF053D3C71EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thinkhomeLogger", "thinkhomeLogger", "{98F2DD28-72E8-4E18-895A-D51B3E640947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkhomeLogger.NLog.tests", "tests\ThinkhomeLogger.NLog.tests\ThinkhomeLogger.NLog.tests.csproj", "{BA102C1F-E7E2-4715-93E2-AA584D4621AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99E80877-4C64-46F4-B6BB-E7B9E7BFBCDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E80877-4C64-46F4-B6BB-E7B9E7BFBCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E80877-4C64-46F4-B6BB-E7B9E7BFBCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E80877-4C64-46F4-B6BB-E7B9E7BFBCDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B66A4843-6C21-4D57-B0FD-E753613C119E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66A4843-6C21-4D57-B0FD-E753613C119E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66A4843-6C21-4D57-B0FD-E753613C119E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66A4843-6C21-4D57-B0FD-E753613C119E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E33F1EF9-0618-4071-A918-4F6FA22077BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33F1EF9-0618-4071-A918-4F6FA22077BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33F1EF9-0618-4071-A918-4F6FA22077BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33F1EF9-0618-4071-A918-4F6FA22077BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146E74E2-4F87-4796-8F2A-BF053D3C71EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146E74E2-4F87-4796-8F2A-BF053D3C71EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146E74E2-4F87-4796-8F2A-BF053D3C71EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146E74E2-4F87-4796-8F2A-BF053D3C71EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA102C1F-E7E2-4715-93E2-AA584D4621AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA102C1F-E7E2-4715-93E2-AA584D4621AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA102C1F-E7E2-4715-93E2-AA584D4621AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA102C1F-E7E2-4715-93E2-AA584D4621AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E33F1EF9-0618-4071-A918-4F6FA22077BA} = {EA019B49-C2A8-47A6-9C67-87E3216B0175}
+		{146E74E2-4F87-4796-8F2A-BF053D3C71EB} = {98F2DD28-72E8-4E18-895A-D51B3E640947}
+		{BA102C1F-E7E2-4715-93E2-AA584D4621AE} = {98F2DD28-72E8-4E18-895A-D51B3E640947}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90B0F59A-5DA9-4F8F-81A0-65008E82858A}
+	EndGlobalSection
+EndGlobal
