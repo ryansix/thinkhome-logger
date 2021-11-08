@@ -21,14 +21,3 @@ D:\workspace\thinkhome\ThinkhomeSocketLogger\GPSSocketLoggerNetCore\obj\Debug\ne
 D:\workspace\thinkhome\ThinkhomeSocketLogger\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.dll
 D:\workspace\thinkhome\ThinkhomeSocketLogger\GPSSocketLoggerNetCore\obj\Debug\net5\ref\ThinkhomeSocketLoggerNetCore.dll
 D:\workspace\thinkhome\ThinkhomeSocketLogger\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.pdb
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\bin\Debug\net5\ThinkhomeSocketLoggerNetCore.deps.json
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\bin\Debug\net5\ThinkhomeSocketLoggerNetCore.dll
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\bin\Debug\net5\ref\ThinkhomeSocketLoggerNetCore.dll
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\bin\Debug\net5\ThinkhomeSocketLoggerNetCore.pdb
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.GeneratedMSBuildEditorConfig.editorconfig
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.AssemblyInfoInputs.cache
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.AssemblyInfo.cs
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.csproj.CoreCompileInputs.cache
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.dll
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\obj\Debug\net5\ref\ThinkhomeSocketLoggerNetCore.dll
-D:\workspace\thinkhome\ThinkhomeSocketLogger\src\GPSSocketLoggerNetCore\obj\Debug\net5\ThinkhomeSocketLoggerNetCore.pdb
