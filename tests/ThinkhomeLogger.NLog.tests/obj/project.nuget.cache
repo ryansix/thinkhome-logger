@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kMGHCNLRk71qb3XHaRNm7aPPfloPfN3LWsrYSbY4flw9DIQLLaATwzj/lJNRIWh+dm5W61/fcLlUdaVZmgKq/Q==",
+  "dgSpecHash": "B4BbfT4rxBJ+X4Fbc3214yv5/2XRCgLed5g4FwE94RsAMMsA4JmLqXcAIceIYDAslC3Ef8teIyPrqFli3BOZ7A==",
   "success": true,
   "projectFilePath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\tests\\ThinkhomeLogger.NLog.tests\\ThinkhomeLogger.NLog.tests.csproj",
   "expectedPackageFiles": [

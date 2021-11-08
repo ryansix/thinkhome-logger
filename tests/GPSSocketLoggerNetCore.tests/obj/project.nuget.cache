@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5mW1U7q2teQUXWf/AMScWUXy6YSHozJ24GJyEZ5ov0bC76vSoVXRCdgQPH3cBU2dWXbfLkw0HHxHjicMn4OJ2g==",
+  "dgSpecHash": "kxkeHLnSJZYf6EZqjNmfpfdELVYONK/BS2rSmKW7ZVXfBPkTAiQJl/HTZoJGZRlt+Vlz4QZ/tNft3Vlmd0DLWQ==",
   "success": true,
   "projectFilePath": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\tests\\GPSSocketLoggerNetCore.tests\\GPSSocketLoggerNetCore.tests.csproj",
   "expectedPackageFiles": [

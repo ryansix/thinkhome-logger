@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkhomeLogger.NLog", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thinkhomeLogger", "thinkhomeLogger", "{98F2DD28-72E8-4E18-895A-D51B3E640947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkhomeLogger.NLog.tests", "tests\ThinkhomeLogger.NLog.tests\ThinkhomeLogger.NLog.tests.csproj", "{BA102C1F-E7E2-4715-93E2-AA584D4621AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkhomeLogger.NLog.tests", "tests\ThinkhomeLogger.NLog.tests\ThinkhomeLogger.NLog.tests.csproj", "{BA102C1F-E7E2-4715-93E2-AA584D4621AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
