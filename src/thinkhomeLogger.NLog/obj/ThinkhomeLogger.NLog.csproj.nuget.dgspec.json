@@ -5,7 +5,7 @@
   },
   "projects": {
     "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\thinkhomeLogger.NLog\\ThinkhomeLogger.NLog.csproj": {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "restore": {
         "projectUniqueName": "D:\\workspace\\thinkhome\\thinkhomeSocketLogger\\src\\thinkhomeLogger.NLog\\ThinkhomeLogger.NLog.csproj",
         "projectName": "ThinkhomeLogger.NLog",

@@ -116,6 +116,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.ThinkhomeLoggingServiceExtensions">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Microsoft.Extensions.DependencyInjection.ThinkhomeLoggingServiceExtensions.AddThinkhomeRuntimeLogger(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Func{System.IServiceProvider,ThinkhomeLogger.Abstractions.ThinkhomeLoggerOptions})">
             <summary>
             

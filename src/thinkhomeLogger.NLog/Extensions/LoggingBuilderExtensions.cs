@@ -10,6 +10,9 @@ using ThinkhomeLogger.Abstractions;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class ThinkhomeLoggingServiceExtensions
     {
         public static void AddThinkhomeRuntimeLogger(this IServiceCollection services, IConfiguration configuration, string configfile, string selection)

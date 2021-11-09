@@ -39,7 +39,8 @@ namespace ThinkhomeLogger
             if (!string.IsNullOrEmpty(ipAddress) && !ipAddress.StartsWith("00.00"))
                 return ipAddress; 
             var mic = GetNetworkInterface();
-            var c = mic.GetIPProperties();
+            var c = mic?.GetIPProperties();
+            if (mic == null || c==null) { ipAddress = "127.0.0.1"; return ipAddress; } 
             ipAddress = (c.UnicastAddresses.FirstOrDefault(u => u.Address.AddressFamily == AddressFamily.InterNetwork).Address)?.ToString(); 
             return ipAddress;
         }
@@ -70,26 +71,28 @@ namespace ThinkhomeLogger
             return new PhysicalAddress(new byte[] { 0, 0, 0, 0, 0, 0 });
         }
 
-       
+
 
         private static NetworkInterface GetNetworkInterface()
         {
             // order interfaces by speed and filter out down and loopback
             // take first of the remaining
-            var interfaces = NetworkInterface.GetAllNetworkInterfaces().ToList();  
+            var interfaces = NetworkInterface.GetAllNetworkInterfaces().ToList();
             if (interfaces == null || !interfaces.Any())
                 return null;
-          
-            Expression<Func<NetworkInterface, bool>>  predicate = c => c.NetworkInterfaceType != NetworkInterfaceType.Loopback
-             && c.OperationalStatus == OperationalStatus.Up
-             && (!c.Description.ToLower().Contains("virtu"))
-             && (!c.Description.Contains("Pseudo")); 
 
+            Expression<Func<NetworkInterface, bool>> predicate = c => c.NetworkInterfaceType != NetworkInterfaceType.Loopback
+            && c.OperationalStatus == OperationalStatus.Up
+            && (!c.Description.ToLower().Contains("virtu"))
+            && (!c.Description.Contains("Pseudo"));
+
+            var newpredicate = predicate;
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-                predicate = predicate.And(c => c.Name.ToLower().Contains("wlan"));
+                newpredicate = newpredicate.And(c => c.Name.ToLower().Contains("wlan"));
             else
-                predicate = predicate.And(c => c.Name.ToLower().Contains("eth")); 
-            var firstUpInterface = interfaces .FirstOrDefault(predicate.Compile());
+                newpredicate = newpredicate.And(c => c.Name.ToLower().Contains("eth"));
+            var firstUpInterface = interfaces.FirstOrDefault(newpredicate.Compile());
+            if (firstUpInterface == null) interfaces.FirstOrDefault(predicate.Compile());
 
             return firstUpInterface;
         }
