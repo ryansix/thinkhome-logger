@@ -84,47 +84,6 @@
             日志源
             </summary> 
         </member>
-        <member name="M:ThinkhomeLogger.ThinkhomeLoggingServiceExtensions.AddThinkhomeRuntimeLogger(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{ThinkhomeLogger.Abstractions.ThinkhomeLoggerOptions})">
-            <summary>
-            
-            </summary>
-            <param name="services"></param>
-            <param name="configuration"></param>
-            <param name="configfile"></param>
-            <param name="startupAction"></param>
-        </member>
-        <member name="M:ThinkhomeLogger.ThinkhomeLoggingServiceExtensions.AddThinkhomeRuntimeLogger(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="services"></param>
-            <param name="configuration"></param>
-            <param name="configfile"></param>
-        </member>
-        <member name="M:ThinkhomeLogger.LoggingBuilderExtensions.AddThinkhomeConfigureLogging(Microsoft.Extensions.Logging.ILoggingBuilder,System.String,Microsoft.Extensions.Configuration.IConfiguration,System.String)">
-            <summary>
-            注入
-            </summary>
-            <param name="builder"></param>
-            <param name="configfile"></param>
-            <param name="configuration"></param>
-            <param name="selection"></param>
-        </member>
-        <member name="M:ThinkhomeLogger.LoggingBuilderExtensions.AddThinkhomeConfigureLogging(Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Configuration.IConfiguration,System.String)">
-            <summary>
-            
-            </summary>
-            <param name="builder"></param>
-            <param name="configuration"></param>
-            <param name="selection"></param>
-        </member>
-        <member name="M:ThinkhomeLogger.LoggingBuilderExtensions.AddThinkhomeConfigureLogging(Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Configuration.IConfiguration)">
-            <summary>
-            
-            </summary>
-            <param name="builder"></param>
-            <param name="configuration"></param>
-        </member>
         <member name="M:ThinkhomeLogger.Logging.NullScope.Dispose">
             <inheritdoc />
         </member>
@@ -156,6 +115,32 @@
             Gets the MAC address of the current PC.
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ThinkhomeLoggingServiceExtensions.AddThinkhomeRuntimeLogger(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Func{System.IServiceProvider,ThinkhomeLogger.Abstractions.ThinkhomeLoggerOptions})">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <param name="configfile"></param>
+            <param name="startupAction"></param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.ThinkhomeLoggingServiceExtensions.AddThinkhomeRuntimeLogger(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <param name="configfile"></param>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.LoggingBuilderExtensions.AddThinkhomeConfigureLogging(Microsoft.Extensions.Logging.ILoggingBuilder,System.String,Microsoft.Extensions.Configuration.IConfiguration,System.String)">
+            <summary>
+            注入
+            </summary>
+            <param name="builder"></param>
+            <param name="configfile"></param>
+            <param name="configuration"></param>
+            <param name="selection"></param>
         </member>
     </members>
 </doc>

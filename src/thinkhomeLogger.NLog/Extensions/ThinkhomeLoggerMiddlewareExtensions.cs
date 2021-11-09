@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ThinkhomeLogger.Logging;
+using ThinkhomeLogger.Abstractions;
+using Microsoft.Extensions.Options;
 
 namespace ThinkhomeLogger
 {
@@ -13,9 +15,11 @@ namespace ThinkhomeLogger
     {
         public static IServiceProvider UseThinkhomeLogger(this IServiceProvider serviceProvider)
         {
+            var opt = serviceProvider.GetService<ThinkhomeLoggerOptions>();
+
             var factory = serviceProvider.GetService<ILoggerFactory>();
-            factory.AddThinkhomeLogger(serviceProvider);                        //2.加入新的服务
+            factory.AddThinkhomeLogger(opt);                        //2.加入新的服务
             return serviceProvider;
-        }
+        }  
     }
 }

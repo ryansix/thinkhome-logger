@@ -19,7 +19,7 @@ namespace ThinkhomeLogger.Abstractions
         /// <summary>
         /// 应用程序标识
         /// </summary> 
-        public string AppId { get; set; } = "Application";
+        public string AppId { get; set; }= "Application";
         /// <summary>
         /// 程序类型，可空
         /// </summary> 

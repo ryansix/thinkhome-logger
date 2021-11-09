@@ -12,10 +12,10 @@ namespace ThinkhomeLogger.Logging
 {
    public static class ThinkhomeLoggerExtensions
     {
-        public static ILoggerFactory AddThinkhomeLogger(this ILoggerFactory factory,  IServiceProvider serviceProvider)
-        {
-            var opt = serviceProvider.GetService<IOptions<ThinkhomeLoggerOptions>>();
-            factory.AddProvider(new ThinkhomeLoggerProvider(opt.Value)); 
+        public static ILoggerFactory AddThinkhomeLogger(this ILoggerFactory factory, ThinkhomeLoggerOptions opt)
+        { 
+            //var opt = serviceProvider.GetService<IOptions<ThinkhomeLoggerOptions>>()?.Value;
+            factory.AddProvider(new ThinkhomeLoggerProvider(opt)); 
             return factory;
         }
     }

@@ -6,7 +6,7 @@ using System;
 using System.Runtime.InteropServices;
 using ThinkhomeLogger.Abstractions;
 using ThinkhomeLogger.Logging;
-using Xunit;
+using Xunit; 
 
 namespace ThinkhomeLogger
 {
@@ -22,10 +22,10 @@ namespace ThinkhomeLogger
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             Configuration = builder.Build(); 
             var services = new ServiceCollection();  
-            services.AddThinkhomeRuntimeLogger(Configuration, "configs/nlog.config",  "ThinkhomeLogging"); //1. 注入nlog服务
+            services.AddThinkhomeRuntimeLogger(Configuration); //1. 注入nlog服务
             ServiceProvider = services.BuildServiceProvider();
 
-            ServiceProvider.AddThinkhomeLogger();    //2.加入新的服务
+            ServiceProvider.UseThinkhomeLogger();    //2.加入新的服务
             //var factory = ServiceProvider.GetService<ILoggerFactory>(); 
             //factory.AddThinkhomeLogger(ServiceProvider);                       
         }
