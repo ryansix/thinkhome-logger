@@ -17,7 +17,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thinkhomeLogger", "thinkhom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkhomeLogger.NLog.tests", "tests\ThinkhomeLogger.NLog.tests\ThinkhomeLogger.NLog.tests.csproj", "{BA102C1F-E7E2-4715-93E2-AA584D4621AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkhomeBootstrap", "src\ThinkhomeBootstrap\ThinkhomeBootstrap.csproj", "{CCC8BC91-38F1-4C46-9ED1-6306885818BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkhomeBootstrap", "src\ThinkhomeBootstrap\ThinkhomeBootstrap.csproj", "{CCC8BC91-38F1-4C46-9ED1-6306885818BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bootstraps", "bootstraps", "{6D274D86-8869-44FE-9D89-7DD07D42C2AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerBootstrap", "src\DockerBootstrap\DockerBootstrap.csproj", "{ADC6EC01-88D8-4599-8CF9-5AD187BF4E3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{CCC8BC91-38F1-4C46-9ED1-6306885818BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCC8BC91-38F1-4C46-9ED1-6306885818BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCC8BC91-38F1-4C46-9ED1-6306885818BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC6EC01-88D8-4599-8CF9-5AD187BF4E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC6EC01-88D8-4599-8CF9-5AD187BF4E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC6EC01-88D8-4599-8CF9-5AD187BF4E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC6EC01-88D8-4599-8CF9-5AD187BF4E3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,8 @@ Global
 		{E33F1EF9-0618-4071-A918-4F6FA22077BA} = {EA019B49-C2A8-47A6-9C67-87E3216B0175}
 		{146E74E2-4F87-4796-8F2A-BF053D3C71EB} = {98F2DD28-72E8-4E18-895A-D51B3E640947}
 		{BA102C1F-E7E2-4715-93E2-AA584D4621AE} = {98F2DD28-72E8-4E18-895A-D51B3E640947}
+		{CCC8BC91-38F1-4C46-9ED1-6306885818BE} = {6D274D86-8869-44FE-9D89-7DD07D42C2AA}
+		{ADC6EC01-88D8-4599-8CF9-5AD187BF4E3C} = {6D274D86-8869-44FE-9D89-7DD07D42C2AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90B0F59A-5DA9-4F8F-81A0-65008E82858A}

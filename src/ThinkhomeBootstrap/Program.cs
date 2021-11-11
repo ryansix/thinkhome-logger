@@ -13,6 +13,7 @@ namespace ThinkhomeBootstrap
         static void Main(string[] args)
         {
             //PreConfigureContainer((ObjectContainer.Current as AutofacObjectContainer).ContainerBuilder);    //可以支持超級IOptions
+             
             var builder = new ConfigurationBuilder()
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             var configuration = builder.Build();

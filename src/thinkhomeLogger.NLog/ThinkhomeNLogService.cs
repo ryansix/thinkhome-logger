@@ -11,9 +11,10 @@ namespace ThinkhomeLogger
 {
     public class ThinkhomeNLogService : IThinkhomeNLogService
     { 
-        private readonly ILogger _logger;
-        public ThinkhomeNLogService() {
-            _logger = LogManager.GetCurrentClassLogger();
+        private readonly ILogger _logger; 
+        public ThinkhomeNLogService(string name,Type type) {
+            _logger = LogManager.GetCurrentClassLogger();// LogManager.GetLogger(name,type);
+            //_name = name;
         }
         public void Log(LogLevel logLevel, ThinkhomeLoggerOptions loggerOptions, string subject, string message)
         {
@@ -23,11 +24,12 @@ namespace ThinkhomeLogger
 
         internal LogEventInfo CreateLogEventInfo(ThinkhomeLoggerOptions loggerOptions,NLog.LogLevel logLevel, string subject, string message)
         {
-            var logEventInfo = LogEventInfo.Create(logLevel, loggerOptions.AppId, string.Empty);
+            var logEventInfo = LogEventInfo.Create(logLevel, subject, string.Empty);
             var msg = new ThinkhomeLoggerData(loggerOptions, logLevel)
             {
                 Subject = subject,
-                Content = message
+                Content = message,
+                Source = loggerOptions.Source
             };
             logEventInfo.Properties["context"] = JsonConvert.SerializeObject(msg);
             return logEventInfo;

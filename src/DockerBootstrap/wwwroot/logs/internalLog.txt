@@ -1,0 +1,224 @@
+2021-11-10 19:37:16.8961 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 19:37:16.9828 Debug Found assembly location directory: 'D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-11-10 19:37:16.9828 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0
+2021-11-10 19:37:16.9828 Debug Search for auto loading files in location: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0
+2021-11-10 19:37:16.9828 Debug Start auto loading, location: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0
+2021-11-10 19:37:16.9828 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-11-10 19:37:16.9828 Info Loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-11-10 19:37:17.0029 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-11-10 19:37:17.0029 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 19:37:17.0029 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-11-10 19:37:17.0029 Debug Auto loading done
+2021-11-10 19:37:17.0029 Info Message Template Auto Format enabled
+2021-11-10 19:37:17.0176 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-10 19:37:17.0318 Debug Setting 'NLog.Targets.FileTarget.name' to 'thinkhome'
+2021-11-10 19:37:17.0318 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/thinkhome/${shortdate}.log'
+2021-11-10 19:37:17.0318 Debug Setting 'NLog.Targets.FileTarget.layout' to '[appname]-${event-properties:item=context}'
+2021-11-10 19:37:17.0318 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'context'
+2021-11-10 19:37:17.0318 Info Adding target FileTarget(Name=thinkhome)
+2021-11-10 19:37:17.0318 Debug Registered target thinkhome: NLog.Targets.FileTarget
+2021-11-10 19:37:17.0318 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-10 19:37:17.0318 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-11-10 19:37:17.0428 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-11-10 19:37:17.0428 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '[appname]-${event-properties:item=context}'
+2021-11-10 19:37:17.0428 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'context'
+2021-11-10 19:37:17.0428 Info Adding target ColoredConsoleTarget(Name=console)
+2021-11-10 19:37:17.0428 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-11-10 19:37:17.0428 Debug Watching path 'D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0' filter 'nlog.config' for changes.
+2021-11-10 19:37:17.0428 Debug --- NLog configuration dump ---
+2021-11-10 19:37:17.0577 Debug Targets:
+2021-11-10 19:37:17.0577 Debug File Target[thinkhome]
+2021-11-10 19:37:17.0577 Debug ColoredConsole Target[console]
+2021-11-10 19:37:17.0577 Debug Rules:
+2021-11-10 19:37:17.0577 Debug logNamePattern: (ThinkhomeLogger:StartsWith) levels: [ Info Warn Error Fatal ] appendTo: [ thinkhome console ]
+2021-11-10 19:37:17.0577 Debug --- End of NLog configuration dump ---
+2021-11-10 19:37:17.0577 Info Validating config: TargetNames=thinkhome, console, ConfigItems=13, FilePath=D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\nlog.config
+2021-11-10 19:37:17.0577 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-11-10 19:37:17.0577 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-11-10 19:37:17.2701 Debug Hide assemblies for callsite
+2021-11-10 19:37:17.2701 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 19:37:17.3432 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-11-10 19:37:17.3432 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-11-10 19:37:17.3432 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2021-11-10 19:37:17.3432 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2021-11-10 19:37:17.3556 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2021-11-10 19:37:17.3556 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2021-11-10 19:37:17.3556 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2021-11-10 19:37:17.3710 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2021-11-10 19:37:21.6310 Debug Targets for ThinkhomeLogger.ThinkhomeNLogService by level:
+2021-11-10 19:37:21.6310 Debug Trace =>
+2021-11-10 19:37:21.6383 Debug Debug =>
+2021-11-10 19:37:21.6383 Debug Info => thinkhome console
+2021-11-10 19:37:21.6383 Debug Warn => thinkhome console
+2021-11-10 19:37:21.6383 Debug Error => thinkhome console
+2021-11-10 19:37:21.6383 Debug Fatal => thinkhome console
+2021-11-10 19:37:21.6519 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.MvcOptions
+2021-11-10 19:37:21.6519 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2021-11-10 19:37:21.7341 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2021-11-10 19:37:21.7341 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2021-11-10 19:37:21.7464 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+2021-11-10 19:37:21.7464 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2021-11-10 19:37:21.9635 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+2021-11-10 19:37:21.9720 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+2021-11-10 19:37:21.9720 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
+2021-11-10 19:37:21.9720 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+2021-11-10 19:37:21.9799 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter
+2021-11-10 19:37:21.9799 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter
+2021-11-10 19:37:21.9799 Debug Targets not configured for logger: DockerBootstrap.Controllers.WeatherForecastController
+2021-11-10 19:37:21.9799 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector
+2021-11-10 19:37:21.9799 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+2021-11-10 19:37:25.1603 Debug FileTarget(Name=thinkhome): Preparing for new file 'D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\wwwroot\logs\thinkhome\2021-11-10.log'
+2021-11-10 19:37:25.1603 Debug Creating file appender: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\wwwroot\logs\thinkhome\2021-11-10.log
+2021-11-10 19:37:33.2469 Info AppDomain Shutting down. Logger closing...
+2021-11-10 19:37:33.2469 Debug Stopping file watching for path 'D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0' filter 'nlog.config'
+2021-11-10 19:37:33.2469 Debug Flush completed
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: ThinkhomeLogger.ThinkhomeNLogService
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.MvcOptions
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2021-11-10 19:37:33.2469 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: DockerBootstrap.Controllers.WeatherForecastController
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector
+2021-11-10 19:37:33.2612 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
+2021-11-10 19:37:33.2612 Debug Closing logging configuration...
+2021-11-10 19:37:33.2612 Debug Closing target 'File Target[thinkhome]'.
+2021-11-10 19:37:33.2612 Debug FileAppender Closing Invalidate - D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\wwwroot\logs\thinkhome\2021-11-10.log
+2021-11-10 19:37:33.2612 Debug Closed target 'File Target[thinkhome]'.
+2021-11-10 19:37:33.2612 Debug Closing target 'ColoredConsole Target[console]'.
+2021-11-10 19:37:33.2612 Debug Closed target 'ColoredConsole Target[console]'.
+2021-11-10 19:37:33.2612 Debug Finished closing logging configuration.
+2021-11-10 19:37:33.2612 Info Logger has been shut down.
+2021-11-10 19:37:52.6714 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 19:37:52.7866 Debug Found assembly location directory: 'D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-11-10 19:37:52.7866 Debug Auto loading based on NLog-Assembly found location: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0
+2021-11-10 19:37:52.7866 Debug Search for auto loading files in location: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0
+2021-11-10 19:37:52.7955 Debug Start auto loading, location: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0
+2021-11-10 19:37:52.7955 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-11-10 19:37:52.7955 Info Loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+2021-11-10 19:37:52.8105 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-11-10 19:37:52.8105 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 19:37:52.8105 Info Auto loading assembly file: D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\NLog.Extensions.Logging.dll succeeded!
+2021-11-10 19:37:52.8105 Debug Auto loading done
+2021-11-10 19:37:52.8105 Info Message Template Auto Format enabled
+2021-11-10 19:37:52.8292 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-10 19:37:52.8458 Debug Setting 'NLog.Targets.FileTarget.name' to 'thinkhome'
+2021-11-10 19:37:52.8458 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/thinkhome/${shortdate}.log'
+2021-11-10 19:37:52.8458 Debug Setting 'NLog.Targets.FileTarget.layout' to '[appname]-${event-properties:item=context}'
+2021-11-10 19:37:52.8458 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'context'
+2021-11-10 19:37:52.8458 Info Adding target FileTarget(Name=thinkhome)
+2021-11-10 19:37:52.8458 Debug Registered target thinkhome: NLog.Targets.FileTarget
+2021-11-10 19:37:52.8542 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-10 19:37:52.8542 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-11-10 19:37:52.8542 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-11-10 19:37:52.8542 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '[appname]-${event-properties:item=context}'
+2021-11-10 19:37:52.8542 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'context'
+2021-11-10 19:37:52.8542 Info Adding target ColoredConsoleTarget(Name=console)
+2021-11-10 19:37:52.8542 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-11-10 19:37:52.8819 Debug Watching path 'D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0' filter 'nlog.config' for changes.
+2021-11-10 19:37:52.8819 Debug --- NLog configuration dump ---
+2021-11-10 19:37:52.8819 Debug Targets:
+2021-11-10 19:37:52.8858 Debug File Target[thinkhome]
+2021-11-10 19:37:52.8858 Debug ColoredConsole Target[console]
+2021-11-10 19:37:52.8858 Debug Rules:
+2021-11-10 19:37:52.8858 Debug logNamePattern: (ThinkhomeLogger:StartsWith) levels: [ Info Warn Error Fatal ] appendTo: [ thinkhome console ]
+2021-11-10 19:37:52.8858 Debug --- End of NLog configuration dump ---
+2021-11-10 19:37:52.8858 Info Validating config: TargetNames=thinkhome, console, ConfigItems=13, FilePath=D:\workspace\thinkhome\thinkhomeSocketLogger\src\DockerBootstrap\bin\Debug\net5.0\nlog.config
+2021-11-10 19:37:52.8858 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-11-10 19:37:52.9074 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-11-10 19:37:53.1062 Debug Hide assemblies for callsite
+2021-11-10 19:37:53.1062 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 19:37:53.1462 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-11-10 19:37:53.1462 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-11-10 19:37:53.1520 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2021-11-10 19:37:53.1520 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2021-11-10 19:37:53.1520 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2021-11-10 19:37:53.1520 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2021-11-10 19:37:53.1520 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2021-11-10 19:37:53.1689 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2021-11-10 13:31:17.3864 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 13:31:17.4634 Debug Found assembly location directory: '/app/bin/Debug/net5.0' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2021-11-10 13:31:17.4666 Debug Auto loading based on NLog-Assembly found location: /app/bin/Debug/net5.0
+2021-11-10 13:31:17.4666 Debug Search for auto loading files in location: /app/bin/Debug/net5.0
+2021-11-10 13:31:17.4772 Debug Start auto loading, location: /app/bin/Debug/net5.0
+2021-11-10 13:31:17.4772 Info Auto loading assembly file: /app/bin/Debug/net5.0/NLog.Extensions.Logging.dll
+2021-11-10 13:31:17.4772 Info Loading assembly file: /app/bin/Debug/net5.0/NLog.Extensions.Logging.dll
+2021-11-10 13:31:17.5229 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.7.4.1610. Product version: 1.7.4+e2bffa9e949fb4760d75aca224e78631c063f087. GlobalAssemblyCache: False
+2021-11-10 13:31:17.5266 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 13:31:17.5266 Info Auto loading assembly file: /app/bin/Debug/net5.0/NLog.Extensions.Logging.dll succeeded!
+2021-11-10 13:31:17.5360 Debug Auto loading done
+2021-11-10 13:31:17.5360 Info Message Template Auto Format enabled
+2021-11-10 13:31:17.5612 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-10 13:31:17.5715 Debug Setting 'NLog.Targets.FileTarget.name' to 'thinkhome'
+2021-11-10 13:31:17.5774 Debug Setting 'NLog.Targets.FileTarget.fileName' to '${basedir}/wwwroot/logs/thinkhome/${shortdate}.log'
+2021-11-10 13:31:17.5774 Debug Setting 'NLog.Targets.FileTarget.layout' to '[appname]-${event-properties:item=context}'
+2021-11-10 13:31:17.5852 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'context'
+2021-11-10 13:31:17.5852 Info Adding target FileTarget(Name=thinkhome)
+2021-11-10 13:31:17.5852 Debug Registered target thinkhome: NLog.Targets.FileTarget
+2021-11-10 13:31:17.5852 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-11-10 13:31:17.6010 Debug Setting 'NLog.Targets.ColoredConsoleTarget.name' to 'console'
+2021-11-10 13:31:17.6010 Debug Setting 'NLog.Targets.ColoredConsoleTarget.useDefaultRowHighlightingRules' to 'false'
+2021-11-10 13:31:17.6069 Debug Setting 'NLog.Targets.ColoredConsoleTarget.layout' to '[appname]-${event-properties:item=context}'
+2021-11-10 13:31:17.6069 Debug Setting 'NLog.LayoutRenderers.EventPropertiesLayoutRenderer.item' to 'context'
+2021-11-10 13:31:17.6069 Info Adding target ColoredConsoleTarget(Name=console)
+2021-11-10 13:31:17.6157 Debug Registered target console: NLog.Targets.ColoredConsoleTarget
+2021-11-10 13:31:17.6347 Debug Watching path '/app/bin/Debug/net5.0' filter 'nlog.config' for changes.
+2021-11-10 13:31:17.6385 Debug --- NLog configuration dump ---
+2021-11-10 13:31:17.6385 Debug Targets:
+2021-11-10 13:31:17.6385 Debug File Target[thinkhome]
+2021-11-10 13:31:17.6476 Debug ColoredConsole Target[console]
+2021-11-10 13:31:17.6476 Debug Rules:
+2021-11-10 13:31:17.6476 Debug logNamePattern: (ThinkhomeLogger:StartsWith) levels: [ Info Warn Error Fatal ] appendTo: [ thinkhome console ]
+2021-11-10 13:31:17.6565 Debug --- End of NLog configuration dump ---
+2021-11-10 13:31:17.6565 Info Validating config: TargetNames=thinkhome, console, ConfigItems=13, FilePath=/app/bin/Debug/net5.0/nlog.config
+2021-11-10 13:31:17.6687 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-11-10 13:31:17.6752 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-11-10 13:31:17.8843 Debug Hide assemblies for callsite
+2021-11-10 13:31:17.8880 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-11-10 13:31:17.9029 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
+2021-11-10 13:31:17.9094 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
+2021-11-10 13:31:17.9094 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
+2021-11-10 13:31:17.9323 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+2021-11-10 13:31:17.9380 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+2021-11-10 13:31:17.9380 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+2021-11-10 13:31:17.9380 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
+2021-11-10 13:31:17.9555 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
+2021-11-10 13:31:35.2422 Debug Targets for ThinkhomeLogger.ThinkhomeNLogService by level:
+2021-11-10 13:31:35.2422 Debug Trace =>
+2021-11-10 13:31:35.2481 Debug Debug =>
+2021-11-10 13:31:35.2481 Debug Info => thinkhome console
+2021-11-10 13:31:35.2481 Debug Warn => thinkhome console
+2021-11-10 13:31:35.2569 Debug Error => thinkhome console
+2021-11-10 13:31:35.2569 Debug Fatal => thinkhome console
+2021-11-10 13:31:35.2569 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.MvcOptions
+2021-11-10 13:31:35.2730 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
+2021-11-10 13:31:35.3417 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
+2021-11-10 13:31:35.3460 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+2021-11-10 13:31:35.3566 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+2021-11-10 13:31:35.3566 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+2021-11-10 13:31:35.6041 Debug FileTarget(Name=thinkhome): Preparing for new file '/app/bin/Debug/net5.0/wwwroot/logs/thinkhome/2021-11-10.log'
+2021-11-10 13:31:35.6129 Debug Creating file appender: /app/bin/Debug/net5.0/wwwroot/logs/thinkhome/2021-11-10.log
+2021-11-10 13:31:38.5194 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+2021-11-10 13:31:38.5585 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+2021-11-10 13:31:38.5691 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
+2021-11-10 13:31:38.5768 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+2021-11-10 13:31:38.5768 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter
+2021-11-10 13:31:38.5858 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter
+2021-11-10 13:31:38.6151 Debug Targets not configured for logger: DockerBootstrap.Controllers.WeatherForecastController
+2021-11-10 13:31:38.6858 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector
+2021-11-10 13:31:38.6858 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor

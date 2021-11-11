@@ -14,6 +14,7 @@ using System.Net.NetworkInformation;
 
 namespace NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging
 {
+
     public class NLogThinkhomeCoordinatorLogger : IThinkhomeCoordinatorLogger, IDisposable
     {
         private readonly ILogger _logger;

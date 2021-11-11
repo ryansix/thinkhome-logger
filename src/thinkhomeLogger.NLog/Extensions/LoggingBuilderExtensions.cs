@@ -50,7 +50,6 @@ namespace Microsoft.Extensions.DependencyInjection
     }
     internal static class LoggingBuilderExtensions
     {
-
         internal static void AddThinkhomeConfigureLogging(this ILoggingBuilder builder, string configfile, Func<IServiceProvider, ThinkhomeLoggerOptions> thinkhomeLoggerOptionsFactory)
         {
             builder.Services.AddSingleton(thinkhomeLoggerOptionsFactory);

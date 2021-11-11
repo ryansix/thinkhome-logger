@@ -11,7 +11,7 @@ namespace ThinkhomeLogger.Abstractions
     /// <summary>
     /// 
     /// </summary>
-    public class ThinkhomeLoggerData
+    internal class ThinkhomeLoggerData
     {
         public ThinkhomeLoggerData()
         {
@@ -19,10 +19,12 @@ namespace ThinkhomeLogger.Abstractions
             IpAddress = ThinkhomeNetwork.GetIPAddress();
             InstanceName = ThinkhomeNetwork.GetComputerName();
         }
+
         public ThinkhomeLoggerData(ThinkhomeLoggerOptions options) : this()
         {
-            this.AppId = options.AppId;
-            this.ProgramId = options.ProgramId;
+            if (options == null) return;    //如果配置文件没有配置，则使用默认对象
+            this.AppId = options?.AppId;
+            this.ProgramId = options?.ProgramId;
             if (!string.IsNullOrWhiteSpace(options.IPAddress))
                 this.IpAddress = options.IPAddress;
 

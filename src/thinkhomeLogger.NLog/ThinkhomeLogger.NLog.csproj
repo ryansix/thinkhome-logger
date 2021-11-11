@@ -7,8 +7,11 @@
     <Authors>ryan chan</Authors>
     <Company>thinkhome</Company>
     <Product>thinkhome</Product>
-    <Version>1.0.4</Version>
-    <Description />
+    <Version>1.0.5</Version>
+    <Description>持续迭代
+1.0.5: 
+      1.输出模型中包含了subject内容
+      2.修复初始默认获取IP和MacAddress问题</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

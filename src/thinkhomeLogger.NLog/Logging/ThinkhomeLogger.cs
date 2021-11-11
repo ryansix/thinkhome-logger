@@ -18,11 +18,14 @@ namespace ThinkhomeLogger.Logging
         {
             _name = name;
             _loggerOptions = loggerOptions;
-            _thinkhomeNLogService = new ThinkhomeNLogService();
-
-
+            _thinkhomeNLogService = new ThinkhomeNLogService(name,typeof(ThinkhomeLogger));
         }
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
+        {
+            this.Log<TState>(_name, logLevel, eventId, state, exception, formatter);
+        }
+
+        protected void Log<TState>(string subject,LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
             var logContext = new ThinkhomeLoggerData(_loggerOptions);
             NLog.LogLevel nlogLogLevel = NLog.LogLevel.Trace;
@@ -54,7 +57,7 @@ namespace ThinkhomeLogger.Logging
             }
             string message = formatter(state, exception);
             if (string.IsNullOrWhiteSpace(message)) return;
-            _thinkhomeNLogService.Log(nlogLogLevel, _loggerOptions, string.Empty, message);
+            _thinkhomeNLogService.Log(nlogLogLevel, _loggerOptions, subject, message);
         }
         public bool IsEnabled(LogLevel logLevel) => logLevel != LogLevel.None;
 

@@ -37,11 +37,18 @@ namespace ThinkhomeLogger
         public static string GetIPAddress()
         {
             if (!string.IsNullOrEmpty(ipAddress) && !ipAddress.StartsWith("00.00"))
-                return ipAddress; 
-            var mic = GetNetworkInterface();
-            var c = mic?.GetIPProperties();
-            if (mic == null || c==null) { ipAddress = "127.0.0.1"; return ipAddress; } 
-            ipAddress = (c.UnicastAddresses.FirstOrDefault(u => u.Address.AddressFamily == AddressFamily.InterNetwork).Address)?.ToString(); 
+                return ipAddress;
+            try
+            {
+                var mic = GetNetworkInterface();
+                var c = mic?.GetIPProperties();
+                if (mic == null || c == null) { ipAddress = "127.0.0.1"; return ipAddress; }
+                ipAddress = (c.UnicastAddresses.FirstOrDefault(u => u.Address.AddressFamily == AddressFamily.InterNetwork).Address)?.ToString();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return ipAddress;
         }
         /// <summary>
@@ -53,8 +60,15 @@ namespace ThinkhomeLogger
             if (!string.IsNullOrEmpty(macAddress) && !macAddress.StartsWith("00-00-00"))
                 return macAddress;
 
-            var bytes = GetMacAddress().GetAddressBytes();
-            macAddress = BitConverter.ToString(bytes); ;
+            try
+            {
+                var bytes = GetMacAddress().GetAddressBytes();
+                macAddress = BitConverter.ToString(bytes); ;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return macAddress;
         }
         /// <summary>
