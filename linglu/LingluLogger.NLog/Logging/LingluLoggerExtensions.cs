@@ -6,15 +6,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ThinkhomeLogger.Abstractions;
+using LingluLogger.Abstractions;
 
-namespace ThinkhomeLogger.Logging
+namespace LingluLogger.Logging
 {
-   public static class ThinkhomeLoggerExtensions
+   public static class LingluLoggerExtensions
     {
-        public static ILoggerFactory AddThinkhomeLogger(this ILoggerFactory factory, ThinkhomeLoggerOptions opt)
+        public static ILoggerFactory AddLingluLogger(this ILoggerFactory factory, LingluLoggerOptions opt)
         {
-            factory.AddProvider(new ThinkhomeLoggerProvider(opt));
+            factory.AddProvider(new LingluLoggerProvider(opt)); 
             return factory;
         }
     }

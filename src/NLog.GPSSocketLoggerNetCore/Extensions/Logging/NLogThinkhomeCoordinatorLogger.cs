@@ -91,17 +91,7 @@ namespace NLog.ThinkhomeSocketLoggerNetCore.Extensions.Logging
             return Task.Factory.StartNew(() => { LogReceive(terminalPhoneNo, message); });
         }
         public Task LogSendAsync(string terminalPhoneNo, byte[] message)
-        {
-            //if (!_option.IsOpen) return Task.CompletedTask;
-            //if (!EnsureMaxLogPenddingRecordCount()) return Task.CompletedTask;
-            //var logEventInfo = CreateLogEventInfo(terminalPhoneNo);
-            //logEventInfo.Properties["msgtype"] = "send>> ";
-            //var messageHexString = BitConverter.ToString(message).Replace("-", " ");
-            //logEventInfo.Message = messageHexString;//message.ToHexString();
-            //if (_option.Callback != null)
-            //    logEventInfo.Properties["msgtext"] = _option.Callback(message);
-            //_logQueue.Enqueue(logEventInfo);
-            //TryEnterLogAsync();
+        { 
             return Task.Factory.StartNew(() => { LogSend(terminalPhoneNo, message); });
         }
 

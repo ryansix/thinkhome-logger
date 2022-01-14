@@ -4,28 +4,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ThinkhomeLogger.Abstractions;
+using LingluLogger.Abstractions;
 
-namespace ThinkhomeLogger.Logging
+namespace LingluLogger.Logging
 {
     /// <summary>
     /// 
     /// </summary>
-    public class ThinkhomeLogger : ILogger
+    public class LingluLogger : ILogger
     {
         private readonly string _name;
-        private readonly ThinkhomeLoggerOptions _loggerOptions;
-        private readonly IThinkhomeNLogService _thinkhomeNLogService;
+        private readonly LingluLoggerOptions _loggerOptions;
+        private readonly ILingluNLogService _lingluNLogService;
         /// <summary>
         /// 
         /// </summary>
         /// <param name="name"></param>
         /// <param name="loggerOptions"></param>
-        public ThinkhomeLogger(string name, ThinkhomeLoggerOptions loggerOptions)
+        public LingluLogger(string name, LingluLoggerOptions loggerOptions)
         {
             _name = name;
-            _loggerOptions = loggerOptions;
-            _thinkhomeNLogService = new ThinkhomeNLogService(name, typeof(ThinkhomeLogger));
+            _loggerOptions = loggerOptions; 
+            _lingluNLogService = new LingluNLogService(name, typeof(LingluLogger));
         }
         /// <summary>
         /// 
@@ -51,8 +51,8 @@ namespace ThinkhomeLogger.Logging
         /// <param name="exception"></param>
         /// <param name="formatter"></param>
         protected void Log<TState>(string subject, LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
-        { 
-            NLog.LogLevel nlogLogLevel = NLog.LogLevel.Trace;
+        {
+            var nlogLogLevel = NLog.LogLevel.Trace;
             switch (logLevel)
             {
                 case Microsoft.Extensions.Logging.LogLevel.Trace:
@@ -81,7 +81,7 @@ namespace ThinkhomeLogger.Logging
             }
             string message = formatter(state, exception);
             if (string.IsNullOrWhiteSpace(message)) return;
-            _thinkhomeNLogService.Log(nlogLogLevel, _loggerOptions, subject, message);
+            _lingluNLogService.Log(nlogLogLevel, _loggerOptions, subject, message);
         }
         /// <summary>
         /// 

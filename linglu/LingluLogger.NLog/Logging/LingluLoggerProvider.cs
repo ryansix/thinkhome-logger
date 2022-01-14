@@ -5,31 +5,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ThinkhomeLogger.Abstractions;
+using LingluLogger.Abstractions;
 
-namespace ThinkhomeLogger.Logging
+namespace LingluLogger.Logging
 {
     /// <summary>
     /// 
     /// </summary>
-    public class ThinkhomeLoggerProvider : ILoggerProvider
+    public class LingluLoggerProvider : ILoggerProvider
     {
-        private readonly ThinkhomeLoggerOptions _loggerOptions;
+        private readonly LingluLoggerOptions _loggerOptions;
         /// <summary>
         /// 
         /// </summary>
         /// <param name="loggerOptions"></param>
-        public ThinkhomeLoggerProvider(ThinkhomeLoggerOptions loggerOptions)
+        public LingluLoggerProvider(LingluLoggerOptions loggerOptions)
         {
             _loggerOptions = loggerOptions;
         }
-        private readonly ConcurrentDictionary<string, ThinkhomeLogger> _loggers = new ConcurrentDictionary<string, ThinkhomeLogger>();
+        private readonly ConcurrentDictionary<string, LingluLogger> _loggers = new ConcurrentDictionary<string, LingluLogger>();
         /// <summary>
         /// 创建ILogger对象
         /// </summary>
         /// <param name="categoryName"></param>
         /// <returns></returns>
-        public ILogger CreateLogger(string categoryName) => _loggers.GetOrAdd(categoryName, name => new ThinkhomeLogger(categoryName, _loggerOptions));
+        public ILogger CreateLogger(string categoryName)
+        {
+            if (categoryName.Contains("Linglu"))
+            {
+
+            }
+            return _loggers.GetOrAdd(categoryName, name => new LingluLogger(categoryName, _loggerOptions));
+        }
         /// <summary>
         /// 
         /// </summary>

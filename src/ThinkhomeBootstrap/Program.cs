@@ -27,7 +27,7 @@ namespace ThinkhomeBootstrap
 
            
             var logger = ServiceProvider. GetService<ILogger<Program>>();
-            logger.LogInformation("111"+"111");
+            logger.LogInformation("111"+"111外网");
         }
     }
 }
