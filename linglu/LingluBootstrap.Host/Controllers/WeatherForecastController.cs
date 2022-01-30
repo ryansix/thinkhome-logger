@@ -26,7 +26,7 @@ namespace LingluBootstrap.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            throw new Exception("无法哇哇");
+            //throw new Exception("无法哇哇");
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

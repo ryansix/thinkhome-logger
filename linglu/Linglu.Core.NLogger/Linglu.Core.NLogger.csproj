@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Linglu.Core</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>灵鹿日志服务组件</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Linglu.Core" Version="1.1.30" />
+    <PackageReference Include="Linglu.Core.Jwt" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>

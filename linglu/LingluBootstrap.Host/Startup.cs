@@ -1,5 +1,5 @@
-using Linglu.Core.Middleware;
-using LingluLogger.AspNetCore;
+using Linglu.Core.AspNetCore;
+using Linglu.Core.Middleware; 
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

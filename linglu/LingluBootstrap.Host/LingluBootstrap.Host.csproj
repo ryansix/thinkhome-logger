@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\thinkhomeLogger.NLog\ThinkhomeLogger.NLog.csproj" />
-    <ProjectReference Include="..\LingluLogger.NLog.AspNetCore\LingluLogger.NLog.AspNetCore.csproj" />
+    <ProjectReference Include="..\Linglu.Core.NLogger\Linglu.Core.NLogger.csproj" />
   </ItemGroup>
 
 </Project>

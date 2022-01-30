@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LingluLogger.NLog.AspNetCor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LingluBootstrap.Host", "linglu\LingluBootstrap.Host\LingluBootstrap.Host.csproj", "{4061EB90-EA6D-4D30-8128-0C98FEABE39F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linglu.Core.NLogger", "linglu\Linglu.Core.NLogger\Linglu.Core.NLogger.csproj", "{E46AF801-8A61-46D6-9C9F-A63C25ABADE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{4061EB90-EA6D-4D30-8128-0C98FEABE39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4061EB90-EA6D-4D30-8128-0C98FEABE39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4061EB90-EA6D-4D30-8128-0C98FEABE39F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46AF801-8A61-46D6-9C9F-A63C25ABADE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46AF801-8A61-46D6-9C9F-A63C25ABADE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46AF801-8A61-46D6-9C9F-A63C25ABADE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46AF801-8A61-46D6-9C9F-A63C25ABADE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{6B853D08-C0E7-4E38-8C93-A7F46AB7D38A} = {3B8E829F-BE5F-43A8-B128-30A3704637EE}
 		{D14D56F8-259B-4F00-9D39-2D35D22C7CCF} = {3B8E829F-BE5F-43A8-B128-30A3704637EE}
 		{4061EB90-EA6D-4D30-8128-0C98FEABE39F} = {6D274D86-8869-44FE-9D89-7DD07D42C2AA}
+		{E46AF801-8A61-46D6-9C9F-A63C25ABADE8} = {3B8E829F-BE5F-43A8-B128-30A3704637EE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90B0F59A-5DA9-4F8F-81A0-65008E82858A}
