@@ -40,12 +40,14 @@ namespace LingluLogger
             _logger.Log(logEventInfo);
         }
 
-      
+
 
         public void LogAudit(LogLevel logLevel, LingluAuditLoggerData data)
-        {
+        { 
             var logEventInfo = LogEventInfo.Create(logLevel, string.Empty, string.Empty);
-            logEventInfo.Properties["context"] = JsonSerializer.Serialize(data);
+            var context = JsonSerializer.Serialize(data, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
+            logEventInfo.Properties["context"] = context;
+            logEventInfo.Message = JsonSerializer.Serialize(data, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             _logger.Log(logEventInfo);
         }
 
@@ -68,6 +70,7 @@ namespace LingluLogger
             };
             
             logEventInfo.Properties["context"] = JsonSerializer.Serialize(msg);
+            logEventInfo.Message = JsonSerializer.Serialize(msg, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             return logEventInfo;
         }
 

@@ -47,6 +47,7 @@ namespace Linglu.Core
         {
             var logEventInfo = LogEventInfo.Create(logLevel, string.Empty, string.Empty);
             logEventInfo.Properties["context"] = JsonSerializer.Serialize(data);
+            logEventInfo.Message = JsonSerializer.Serialize(data, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             _logger.Log(logEventInfo);
         }
 
@@ -69,6 +70,7 @@ namespace Linglu.Core
             };
             
             logEventInfo.Properties["context"] = JsonSerializer.Serialize(msg);
+            logEventInfo.Message = JsonSerializer.Serialize(msg, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             return logEventInfo;
         }
 

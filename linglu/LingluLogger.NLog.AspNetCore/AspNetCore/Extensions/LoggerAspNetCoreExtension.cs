@@ -30,9 +30,6 @@ namespace LingluLogger.AspNetCore
 
         public static void AddNLogLoggerAspNetCore(this IServiceCollection services, IConfiguration configuration) {
             services.AddLingluRuntimeLogger(configuration);
-        }
-
-        
-
+        }  
     }
 }

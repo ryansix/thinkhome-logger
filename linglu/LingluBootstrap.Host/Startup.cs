@@ -1,3 +1,4 @@
+
 using Linglu.Core.AspNetCore;
 using Linglu.Core.Middleware; 
 using Microsoft.AspNetCore;
@@ -35,12 +36,14 @@ namespace LingluBootstrap
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LingluBootstrap.Host", Version = "v1" });
             });
 
-            services.AddNLogLoggerAspNetCore(Configuration); //注入日志服务
+            services.AddNLogLoggerAspNetCore(Configuration,"nlog.config"); //注入日志服务
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseRequestResponseLogging();    // 加入此行代码
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -54,7 +57,7 @@ namespace LingluBootstrap
 
             app.UseSwagger(Configuration);
 
-            app.UseRequestResponseLogging();    // 加入此行代码
+            
 
             #region 统一异常处理 置顶
             app.UseMiddleware<ExceptionMiddleware>();
@@ -70,6 +73,9 @@ namespace LingluBootstrap
             {
                 endpoints.MapControllers();
             });
+
+
+            app.ApplicationServices.GetService<ILogger<Startup>>().LogInformation("正在............................");
         }
     }
 }

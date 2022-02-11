@@ -10,7 +10,7 @@ namespace Linglu.Core.Abstractions
         /// <summary>
         /// 地址
         /// </summary>
-        public string IPAddress { get; set; } = "127.0.0.1";
+        public string IPAddress { get; set; }
         /// <summary>
         /// 应用程序标识
         /// </summary> 

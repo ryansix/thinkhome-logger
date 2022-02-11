@@ -39,47 +39,49 @@ namespace Microsoft.AspNetCore
             _stopwatch = new Stopwatch();
         }
         public async Task Invoke(HttpContext context)
-        { 
+        {
+            var controller = (string)context.GetRouteValue("controller");
+            var actionName = (string)context.GetRouteValue("action");
             var requestTime = DateTime.Now;
-            _stopwatch.Restart(); 
+            _stopwatch.Restart();
             var requestText = await FormatRequest(context.Request);
-             
+
             var originalBodyStream = context.Response.Body;
-             
-            using var responseBody = new MemoryStream(); 
+
+            using var responseBody = new MemoryStream();
             context.Response.Body = responseBody;
-             
+
             await _next(context);
-             
-            var responseText = await FormatResponse(context.Response); 
+
+            var responseText = await FormatResponse(context.Response);
 
             await responseBody.CopyToAsync(originalBodyStream);
-              
+
             try
             {
-                
+
                 _lingluNLogService = _provider.GetRequiredService<ILingluNLogService>();//lingluNLogService;
                 var agent = context.Request.Headers.FirstOrDefault(u => u.Key.ToUpper().Contains("user-agent".ToUpper()));
                 var client = GetAppNameWithVersion(agent.Value);
 
                 var auditLog = GetAuditLoggerData(context);
-                auditLog.RequestStartTime = requestTime; 
+                auditLog.RequestStartTime = requestTime;
                 auditLog.ClientModel = client.Key;
                 auditLog.AppVer = client.Value;
                 auditLog.InParameter = requestText;
-                auditLog.OutParameter = responseText; 
+                auditLog.OutParameter = responseText;
                 auditLog.IpAddress = context.GetClientIP();
                 auditLog.RequestEndTime = DateTime.Now;
                 auditLog.ControllerDescribe = context.Request.Path;
-                auditLog.ControllerName = (string)context.GetRouteValue("controller");
-                auditLog.ActionName = (string)context.GetRouteValue("action");
+                auditLog.ControllerName = controller;
+                auditLog.ActionName = actionName;
                 auditLog.ResultCode = context.Response.StatusCode.ToString();
                 auditLog.ResultContent = $"操作成功,耗时:{_stopwatch.ElapsedMilliseconds} ms ";
                 _lingluNLogService.LogAudit(NLog.LogLevel.Info, auditLog);
             }
-            catch (Exception )
+            catch (Exception)
             {
-                 
+
             }
         }
 
@@ -141,6 +143,10 @@ namespace Microsoft.AspNetCore
             response.Body.Seek(0, SeekOrigin.Begin);
             string text = await new StreamReader(response.Body).ReadToEndAsync();
             response.Body.Seek(0, SeekOrigin.Begin);
+            if (text.Length > 2000)
+            {
+                text = text.Substring(0, 2000);
+            }
             return text; 
         }
     }
