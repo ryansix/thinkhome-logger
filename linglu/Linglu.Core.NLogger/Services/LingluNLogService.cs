@@ -1,5 +1,6 @@
 ﻿
 using Linglu.Core.Abstractions;
+using Microsoft.Extensions.Options;
 using NLog;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,11 @@ namespace Linglu.Core
    public class LingluNLogService:ILingluNLogService
     {
         private readonly ILogger _logger;
+        private readonly LingluLoggerOptions lingluLogger;
         public LingluNLogService()
         {
             _logger = LogManager.GetCurrentClassLogger(); //LogManager.GetLogger("LingluLogger", typeof(LingluNLogService)); //LogManager.GetCurrentClassLogger();// LogManager.GetLogger(name,type);
-        }
+        } 
         /// <summary>
         /// 
         /// </summary>
@@ -44,9 +46,9 @@ namespace Linglu.Core
       
 
         public void LogAudit(LogLevel logLevel, LingluAuditLoggerData data)
-        {
+        { 
             var logEventInfo = LogEventInfo.Create(logLevel, string.Empty, string.Empty);
-            logEventInfo.Properties["context"] = JsonSerializer.Serialize(data);
+            logEventInfo.Properties["context"] = JsonSerializer.Serialize(data, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             logEventInfo.Message = JsonSerializer.Serialize(data, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             _logger.Log(logEventInfo);
         }
@@ -69,7 +71,7 @@ namespace Linglu.Core
                 Source = loggerOptions.Source
             };
             
-            logEventInfo.Properties["context"] = JsonSerializer.Serialize(msg);
+            logEventInfo.Properties["context"] = JsonSerializer.Serialize(msg, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             logEventInfo.Message = JsonSerializer.Serialize(msg, new JsonSerializerOptions() { Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping });
             return logEventInfo;
         }

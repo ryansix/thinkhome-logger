@@ -61,10 +61,11 @@ namespace Microsoft.AspNetCore
             {
 
                 _lingluNLogService = _provider.GetRequiredService<ILingluNLogService>();//lingluNLogService;
+                var baseOption = _provider.GetService<LingluLoggerOptions>();
                 var agent = context.Request.Headers.FirstOrDefault(u => u.Key.ToUpper().Contains("user-agent".ToUpper()));
                 var client = GetAppNameWithVersion(agent.Value);
 
-                var auditLog = GetAuditLoggerData(context);
+                var auditLog = GetAuditLoggerData(context,baseOption);
                 auditLog.RequestStartTime = requestTime;
                 auditLog.ClientModel = client.Key;
                 auditLog.AppVer = client.Value;
@@ -103,9 +104,9 @@ namespace Microsoft.AspNetCore
             return res;
         }
 
-        private LingluAuditLoggerData GetAuditLoggerData(HttpContext httpContext)
+        private LingluAuditLoggerData GetAuditLoggerData(HttpContext httpContext, LingluLoggerOptions opt)
         {
-            var data = new LingluAuditLoggerData()
+            var data = new LingluAuditLoggerData(opt)
             {
                 AccountId = GetPhone(),
             };
