@@ -4,8 +4,11 @@ using Microsoft.Extensions.Options;
 using NLog;
 using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web;
 using ThinkHome_CommandTranslator;
 using ThinkHomeDevice.Protocol;
 using ThinkhomeSocketLoggerNetCore.Abstractions;
@@ -80,6 +83,14 @@ namespace GPSSocketLoggerNetCore.tests
             var bytes = "5A A5 00 17 10 01 08 1A E1 01 21 07 00 00 FF FE 00 00 10 11 00 00 05 00 00 00 00 9F 5B B5".ToHexBytes();
             var text = CommandTranslator.TranslateCommand(BitConverter.ToString(bytes));
 
+        }
+
+
+        [Fact]
+        public void Convert()
+        {
+            var str = "{\u0022devid\u0022:\u00222002000000001001\u0022,\u0022online\u0022:1,\u0022info\u0022:[{\u0022pos\u0022:1,\u0022status\u0022:{\u0022online\u0022:1}}]}";
+            var utfString = Regex.Unescape(str);//Encoding.UTF8.GetString(Encoding.Default.GetBytes(str));
         }
 
     }
